@@ -1,32 +1,532 @@
-# robots.txt — RenderWorks  (https://{{DOMAIN}}/robots.txt)
-# Goal: let Googlebot crawl all indexable content; stop it wasting crawl budget
-# on parameterised/duplicate URLs. (Crawl budget is rarely a constraint on a
-# ~22-page site — the value here is preventing duplicate/parameter crawls, not
-# "maximising" anything. There is no directive that increases crawl rate.)
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-User-agent: *
-Allow: /
+<title>Silicone Render Guildford &amp; Surrey | Cost &amp; Application | RenderWorks</title>
+<meta name="description" content="Silicone render in Guildford &amp; Surrey costs £60–120/m² installed. Through-coloured, hydrophobic, self-cleaning, 25–40 year life, never needs repainting. Free survey.">
 
-# Block low-value / non-indexable paths (none exist yet — examples for when they do)
-Disallow: /*?*sort=
-Disallow: /*?*utm_
-Disallow: /*&*
-Disallow: /cgi-bin/
-Disallow: /tmp/
+<!-- Indexing: explicit, valid directives only -->
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<link rel="canonical" href="https://{{DOMAIN}}/services/silicone-render.html">
 
-# Allow CSS/JS so Google can render the page (do NOT block these)
-Allow: /css/
-Allow: /js/
-Allow: /img/
+<!-- Locale / geo -->
+<meta name="geo.region" content="GB-SRY">
+<meta name="geo.placename" content="Guildford, Surrey">
+<meta name="geo.position" content="51.2362;-0.5704">
+<meta name="ICBM" content="51.2362, -0.5704">
 
-# AI crawler stance — DECISION REQUIRED. Leave commented to allow (default).
-# Uncomment to opt OUT of training crawls while staying in Google Search:
-# User-agent: GPTBot
-# Disallow: /
-# User-agent: CCBot
-# Disallow: /
-# (Google-Extended controls Gemini training; Googlebot/AI Overviews are separate.)
-# User-agent: Google-Extended
-# Disallow: /
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_GB">
+<meta property="og:title" content="Silicone Render Guildford &amp; Surrey | Cost &amp; Application">
+<meta property="og:description" content="£60–120/m² installed. Through-coloured, self-cleaning, 25–40 year life, never needs repainting.">
+<meta property="og:url" content="https://{{DOMAIN}}/services/silicone-render.html">
+<meta property="og:image" content="https://{{DOMAIN}}/img/silicone-render-guildford.jpg">
 
-Sitemap: https://{{DOMAIN}}/sitemap.xml
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+
+<!-- Fonts + styles (existing framework) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;1,9..144,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/site.css">
+</head>
+<body>
+<a href="#main" class="skip-link" style="position:absolute;left:-999px">Skip to content</a>
+<nav id="mainNav" class="scrolled">
+  <a href="/" class="logo">Render<em>Works</em></a>
+  <ul class="nav-links">
+    <li><a href="/services/silicone-render.html">Silicone</a></li>
+    <li><a href="/services/monocouche-render.html">Monocouche</a></li>
+    <li><a href="/services/external-wall-insulation.html">EWI</a></li>
+    <li><a href="/locations/">Areas</a></li>
+    <li><a href="/pricing.html">Pricing</a></li>
+    <li><a href="/contact.html" class="nav-cta">Free Survey</a></li>
+  </ul>
+</nav>
+<!-- ============================================================================
+  RenderWorks — Silicone Render (Guildford & Surrey)
+  Page intent: COMMERCIAL/TRANSACTIONAL  |  URL: /services/silicone-render.html
+  Drop-in <main> replacement for the existing GG-framework page.
+  Requires the existing /css/site.css. Calculator is self-contained (inline JS).
+
+  PLACEHOLDERS TO REPLACE BEFORE LAUNCH (do not publish with these live):
+    {{PHONE}}            01483 000 000  -> real tracked number
+    {{DOMAIN}}           www.renderworksguildford.co.uk
+    {{NAP_ADDRESS}}      registered street address (required for LocalBusiness)
+    {{REVIEW_COUNT}}     96  -> live Google review count (must match GBP)
+    {{RATING}}           4.9 -> live Google rating (must match GBP)
+    {{PRICE_UPDATED}}    2025-06-01 -> date you last verified the £/m² figures
+    {{COMPANY_NO}}       Companies House number
+    {{GBP_CID}}          Google Business Profile CID / map URL
+  Figures in the calculator are GUIDE rates. Verify against your live quotes
+  before publishing — do not ship rates you cannot honour.
+============================================================================ -->
+<main id="main">
+
+<!-- ░░ INNER HERO + TRANSACTIONAL TOOL (top-of-page, locks engagement) ░░ -->
+<section class="inner-hero">
+  <div class="ih-wrap">
+    <div>
+      <div class="ih-eyebrow">Silicone Render · Guildford &amp; Surrey</div>
+      <h1>Silicone Render <em>Cost &amp; Application</em></h1>
+      <!-- ANSWER CAPSULE: isolated, extractable, SVO, data-bold -->
+      <p class="ih-sub">
+        Silicone render is a <strong>thin-coat (3–5&nbsp;mm)</strong>, <strong>through-coloured</strong>
+        external wall finish that costs <strong>£60–£120/m²</strong> installed in Surrey. The surface is
+        <strong>hydrophobic</strong> and <strong>self-cleaning</strong>, carries a
+        <strong>25–40&nbsp;year</strong> service life, and <strong>never requires repainting</strong>.
+      </p>
+      <div class="ih-btns">
+        <a href="#calc" class="btn-primary">Calculate My Render Cost</a>
+        <a href="tel:+441483000000" class="btn-ghost">{{PHONE}}</a>
+      </div>
+    </div>
+
+    <!-- LIVE COST CALCULATOR — interactive tool, drives dwell + lead capture -->
+    <div class="rw-calc" id="calc" aria-label="Silicone render cost calculator">
+      <h2 class="rw-calc-h">Silicone Render Cost Calculator</h2>
+      <p class="rw-calc-sub">Instant guide estimate. Surrey rates, updated <time datetime="{{PRICE_UPDATED}}">{{PRICE_UPDATED}}</time>.</p>
+
+      <label for="calc-prop">Property type</label>
+      <select id="calc-prop">
+        <option value="75">Terraced house / bungalow (~75 m²)</option>
+        <option value="120" selected>Semi-detached (~120 m²)</option>
+        <option value="200">Detached (~200 m²)</option>
+        <option value="0">Enter wall area manually</option>
+      </select>
+
+      <div id="calc-manual-wrap" hidden>
+        <label for="calc-manual">Wall area (m²)</label>
+        <input type="number" id="calc-manual" min="10" max="2000" placeholder="e.g. 150">
+      </div>
+
+      <label for="calc-finish">Finish</label>
+      <select id="calc-finish">
+        <option value="1.0">Render over sound existing surface</option>
+        <option value="1.18">Includes hack-off of old render / pebbledash</option>
+        <option value="1.0">New build / bare substrate</option>
+      </select>
+
+      <label for="calc-storeys">Access</label>
+      <select id="calc-storeys">
+        <option value="1.0">2 storeys (standard scaffold)</option>
+        <option value="1.12">3 storeys</option>
+        <option value="1.0">Single storey / bungalow</option>
+      </select>
+
+      <div class="rw-calc-out" role="status" aria-live="polite">
+        <span class="rw-calc-label">Estimated installed cost</span>
+        <span class="rw-calc-figure" id="calc-figure">£7,200 – £14,400</span>
+        <span class="rw-calc-note" id="calc-note">~120 m² · incl. scaffold, mesh, base &amp; topcoat</span>
+      </div>
+
+      <a href="/contact.html" class="ihbtn" style="display:block;text-align:center;text-decoration:none">Get an Exact Fixed Quote →</a>
+      <p class="rw-calc-foot">Guide figures only. Your fixed written price is confirmed after a free survey.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ░░ BREADCRUMB ░░ -->
+<div class="crumb"><div class="crumb-in">
+  <a href="/">Home</a><span>›</span>
+  <a href="/#services">Services</a><span>›</span>
+  <span class="crumb-cur">Silicone Render</span>
+</div></div>
+
+<div class="content">
+<div class="prose">
+
+  <!-- Every H2/H3 mirrors a real query. First 1–2 sentences = answer capsule.
+       EAV triples are woven into the prose (subject–attribute–value). -->
+
+  <h2>What is silicone render?</h2>
+  <p>
+    Silicone render is a <strong>polymer-modified, thin-coat decorative topcoat</strong> applied over a
+    reinforced base coat on external walls. The binder is <strong>silicone resin</strong>, which makes the
+    cured surface <strong>hydrophobic</strong> (water-repellent) and <strong>vapour-permeable</strong>
+    (breathable). It is supplied <strong>through-coloured</strong>, so pigment runs through the full topcoat
+    thickness and the wall never needs repainting.
+  </p>
+  <p>
+    In entity terms: the product <em>is-a</em> thin-coat render; its <em>binder is</em> silicone resin; its
+    <em>typical thickness is</em> 1.5–5&nbsp;mm; its <em>application method is</em> hand-float or spray; its
+    <em>substrate is</em> a cement or lightweight base coat reinforced with <strong>alkali-resistant
+    fibreglass mesh</strong>. Adjacent systems include <strong>monocouche render</strong>,
+    <strong>acrylic render</strong>, <strong>mineral render</strong> and
+    <strong>External Wall Insulation (EWI)</strong>, of which silicone is the standard finishing coat.
+
+  </p>
+
+  <h2>How much does silicone render cost per m² in Surrey?</h2>
+  <p>
+    Silicone render costs <strong>£60–£120/m²</strong> installed in Guildford and Surrey. The figure includes
+    scaffold, beads, fibreglass mesh, base coat, primer and through-coloured topcoat. Removal of failed
+    render or pebbledash adds approximately <strong>15–20%</strong> to the labour element.
+  </p>
+
+  | Property type | Typical wall area | Installed cost (guide) |
+  |---|---|---|
+  | Terraced / bungalow | 60–90 m² | £4,200 – £9,000 |
+  | Semi-detached | 90–150 m² | £6,000 – £11,000 |
+  | Detached | 150–300 m² | £9,000 – £16,500 |
+  | New build (bare substrate) | varies | £55–£100/m² |
+
+  <p>
+    Cost drivers, in order of impact: <strong>wall area (m²)</strong>, <strong>access and storey height</strong>
+    (scaffold cost), <strong>substrate condition</strong> (whether old render is hacked off), <strong>system
+    brand</strong> (e.g. K-Rend, Weber, Parex, Krend), and <strong>finish grain</strong> (1.0&nbsp;mm vs
+    1.5&nbsp;mm aggregate).
+  </p>
+
+  <h3>Is silicone render more expensive than monocouche?</h3>
+  <p>
+    Yes. Silicone render costs <strong>£60–£120/m²</strong> versus <strong>£45–£90/m²</strong> for
+    <a href="/services/monocouche-render.html">monocouche render</a>. The price premium buys the
+    <strong>self-cleaning hydrophobic topcoat</strong> and greater <strong>crack resistance</strong> from the
+    flexible silicone binder. For a like-for-like comparison across all systems, see our
+    <a href="/pricing.html">render cost guide</a>.
+  </p>
+
+  <h2>What are the properties of silicone render?</h2>
+  <p>
+    Silicone render is <strong>hydrophobic</strong>, <strong>vapour-permeable</strong>,
+    <strong>crack-resistant</strong> and <strong>self-cleaning</strong>. These four attributes are the reason
+    it is specified over acrylic and sand-cement finishes in the UK climate.
+  </p>
+  <ul>
+    <li><strong>Hydrophobic</strong> — water beads and runs off (the lotus effect), reducing water ingress and frost damage.</li>
+    <li><strong>Vapour-permeable</strong> — moisture vapour escapes the wall, lowering interstitial condensation and damp risk on solid walls.</li>
+    <li><strong>Self-cleaning</strong> — rainwater lifts surface dirt and biological growth, suppressing <strong>algae</strong> and <strong>black spot</strong>.</li>
+    <li><strong>Crack-resistant</strong> — the flexible silicone binder accommodates thermal movement better than rigid cementitious renders.</li>
+    <li><strong>Through-coloured</strong> — colour is integral to the topcoat; <strong>no repainting</strong> across the service life.</li>
+    <li><strong>UV-stable</strong> — pigment and binder resist fade under ultraviolet exposure.</li>
+  </ul>
+
+  <h3>Does silicone render prevent damp?</h3>
+  <p>
+    Silicone render reduces <strong>penetrating damp</strong> by repelling rainwater and reduces
+    <strong>condensation-related damp</strong> by remaining breathable. It does not cure
+    <strong>rising damp</strong> or defective <strong>DPC</strong> (damp-proof course) failures, which are
+    structural and must be remediated before rendering. We test for moisture at survey.
+  </p>
+
+  <h2>What is the best silicone render system?</h2>
+  <p>
+    The most-specified UK silicone render systems are <strong>K-Rend</strong>, <strong>Weber</strong> (Saint-Gobain),
+    <strong>Parex</strong> and <strong>Krend</strong>. All are <strong>BBA-certified</strong> silicone or
+    silicone-silicate systems applied as a full kit: base coat, alkali-resistant mesh, primer and topcoat.
+  </p>
+  <p>
+    System selection is governed by substrate, exposure zone (BS 8104 driving-rain index), and whether
+    <a href="/services/external-wall-insulation.html">External Wall Insulation</a> is included. Warranty
+    validity depends on <strong>certified-applicator installation to the manufacturer specification</strong> —
+    mixed components or non-approved fixings void cover. See
+    <a href="/services/k-rend-weber.html">our K-Rend &amp; Weber application page</a>.
+  </p>
+
+  <h2>How is silicone render applied?</h2>
+  <p>
+    Silicone render is applied in <strong>five stages</strong> over <strong>5–10 working days</strong> for a
+    typical semi-detached house. The substrate is prepared, a base coat embeds the mesh, beads define the
+    edges, a primer is applied, and the through-coloured topcoat is floated or sprayed to the chosen grain.
+  </p>
+  <ol>
+    <li><strong>Preparation</strong> — substrate cleaned; failed render hacked off; substrate stabilised.</li>
+    <li><strong>Beading</strong> — stainless or PVC <strong>stop beads, bell-cast beads and corner beads</strong> set to true the lines.</li>
+    <li><strong>Base coat + mesh</strong> — cementitious base coat applied; <strong>alkali-resistant fibreglass mesh</strong> embedded for crack control.</li>
+    <li><strong>Primer</strong> — tinted primer keys the topcoat and regulates suction.</li>
+    <li><strong>Topcoat</strong> — silicone topcoat applied at <strong>1.0–1.5&nbsp;mm</strong> grain and rubbed up to a uniform texture.</li>
+  </ol>
+  <p>
+    Application requires <strong>air and substrate temperatures of 5–30&nbsp;°C</strong> and dry conditions
+    during cure. Surrey scheduling therefore avoids frost windows and prolonged rain.
+  </p>
+
+  <h3>Do you need planning permission for silicone render?</h3>
+  <p>
+    No, in most cases. Re-rendering is normally <strong>permitted development</strong> in England. Permission
+    is required for <strong>listed buildings</strong>, properties in a <strong>conservation area</strong>, and
+    where an <strong>Article 4 direction</strong> applies — several exist around Guildford and Godalming. We
+    confirm planning status at survey and submit any application required.
+  </p>
+
+  <h2>How long does silicone render last?</h2>
+  <p>
+    Silicone render lasts <strong>25–40 years</strong> with minimal maintenance. Maintenance is limited to an
+    occasional low-pressure rinse; the hydrophobic surface suppresses the algae and staining that age
+    traditional finishes.
+  </p>
+
+  <!-- Informational→commercial routing -->
+  <p>
+    Ready to price your project? Use the <a href="#calc">cost calculator</a> above for a guide figure, then
+    <a href="/contact.html">book a free survey</a> for a fixed written quote. Serving
+    <a href="/locations/rendering-guildford.html">Guildford</a>,
+    <a href="/locations/rendering-woking.html">Woking</a>,
+    <a href="/locations/rendering-godalming.html">Godalming</a> and all
+    <a href="/locations/">Surrey areas within 15 miles</a>.
+  </p>
+
+  <h2>Frequently asked questions</h2>
+  <div class="faq-list" style="margin-top:8px">
+    <div class="faq-item"><button class="faq-q" aria-expanded="false">How much does silicone render cost per m²?<span class="faq-icon">+</span></button>
+      <div class="faq-a"><p>Silicone render costs <strong>£60–£120/m²</strong> installed in Surrey, including scaffold, mesh, base coat and through-coloured topcoat. Hacking off old render adds roughly 15–20%.</p></div></div>
+    <div class="faq-item"><button class="faq-q" aria-expanded="false">Is silicone render worth the extra cost over acrylic?<span class="faq-icon">+</span></button>
+      <div class="faq-a"><p>Silicone render is <strong>breathable and self-cleaning</strong>; acrylic render is neither. On most UK homes the silicone topcoat resists algae and damp better, which is why it is specified despite a higher £/m².</p></div></div>
+    <div class="faq-item"><button class="faq-q" aria-expanded="false">Can silicone render be applied over pebbledash?<span class="faq-icon">+</span></button>
+      <div class="faq-a"><p>Yes, if the pebbledash is <strong>sound and well-bonded</strong>. Loose, hollow or cracked pebbledash is hacked off first. Bond is verified by tap-testing at survey.</p></div></div>
+    <div class="faq-item"><button class="faq-q" aria-expanded="false">How long does silicone render take to apply?<span class="faq-icon">+</span></button>
+      <div class="faq-a"><p>A typical semi-detached house takes <strong>5–10 working days</strong> including scaffold, prep and coats, weather-dependent, as application needs <strong>5–30&nbsp;°C</strong> and dry cure conditions.</p></div></div>
+    <div class="faq-item"><button class="faq-q" aria-expanded="false">Does silicone render need repainting?<span class="faq-icon">+</span></button>
+      <div class="faq-a"><p>No. Silicone render is <strong>through-coloured</strong>, so it is never painted. Maintenance is an occasional rinse; service life is <strong>25–40 years</strong>.</p></div></div>
+  </div>
+
+</div>
+
+<!-- Sticky conversion sidebar -->
+<aside class="aside">
+  <div class="aside-card dark">
+    <p class="ac-h">Free survey &amp; fixed quote</p>
+    <a href="tel:+441483000000" class="ac-phone">{{PHONE}}</a>
+    <p class="ac-sub">Mon–Fri 7:30–6 · Sat 8–2 · Same-day reply</p>
+    <a href="/contact.html" class="btn-primary" style="display:block;text-align:center">Book a survey</a>
+  </div>
+  <div class="aside-card">
+    <p class="ac-h">Silicone render — key data</p>
+    <div class="pricerow"><span>Installed cost</span><b>£60–120/m²</b></div>
+    <div class="pricerow"><span>Topcoat thickness</span><b>1–5 mm</b></div>
+    <div class="pricerow"><span>Service life</span><b>25–40 yrs</b></div>
+    <div class="pricerow"><span>Repainting</span><b>Never</b></div>
+    <div class="pricerow"><span>Breathable</span><b>Yes</b></div>
+    <div class="pricerow"><span>Self-cleaning</span><b>Yes</b></div>
+  </div>
+  <div class="aside-card">
+    <p class="ac-h">Related systems</p>
+    <ul class="aside-links">
+      <li><a href="/services/monocouche-render.html">Monocouche Render</a></li>
+      <li><a href="/services/k-rend-weber.html">K-Rend &amp; Weber</a></li>
+      <li><a href="/services/external-wall-insulation.html">External Wall Insulation</a></li>
+      <li><a href="/services/render-repairs.html">Render Repairs</a></li>
+    </ul>
+  </div>
+</aside>
+</div>
+
+<!-- ░░ CONTENT DELTA-UPDATE BLOCK (freshness) — update on a schedule ░░ -->
+<!-- Edit the figures + dates below quarterly. Keep the <time> datetime in sync.
+     Do NOT auto-fabricate values; enter rates you have actually verified. -->
+<section class="rw-delta" aria-label="Pricing and regulatory updates">
+  <div style="max-width:1180px;margin:0 auto;padding:40px 6vw">
+    <p class="section-eyebrow">Market &amp; Regulatory Update</p>
+    <p style="font-size:.85rem;color:#888">
+      Last reviewed <time datetime="{{PRICE_UPDATED}}">{{PRICE_UPDATED}}</time>. Next scheduled review: quarterly.
+    </p>
+    <ul>
+      <li><strong>Silicone render guide rate (Surrey):</strong> £60–£120/m² installed — verified {{PRICE_UPDATED}}.</li>
+      <li><strong>Scaffold cost trend:</strong> {{ENTER_TREND}} — e.g. "stable QoQ" / "up ~X%".</li>
+      <li><strong>Regulatory:</strong> Building Regulations <strong>Approved Document B / Part L</strong> apply where render forms part of an EWI thermal upgrade. Confirm current edition.</li>
+      <li><strong>Local planning:</strong> check live <strong>Article 4 directions</strong> on Guildford BC and Waverley BC portals before quoting conservation-area work.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ░░ CTA BAND ░░ -->
+<div class="cta-band"><div class="container">
+  <h2>Get a fixed price for silicone render.</h2>
+  <p>Free survey, fixed written quote, no obligation. Through-coloured silicone that never needs painting.</p>
+  <a href="/contact.html" class="btn-dark">Request Free Survey →</a>
+</div></div>
+
+</main>
+
+<!-- ░░ CALCULATOR + FAQ SCRIPT (inline, no deps) ░░ -->
+<style>
+  .rw-calc{background:#fff;border:1px solid #e6ddd0;border-radius:14px;padding:24px;box-shadow:0 24px 60px rgba(0,0,0,.4)}
+  .rw-calc-h{font-family:'Fraunces',serif;font-size:1.25rem;color:#1a1a1a;margin:0 0 2px}
+  .rw-calc-sub{font-size:.76rem;color:#888;margin:0 0 16px}
+  .rw-calc label{display:block;font-size:.72rem;font-weight:700;color:#1a1a1a;margin:10px 0 5px;letter-spacing:.01em}
+  .rw-calc select,.rw-calc input{width:100%;background:#f6f1e9;border:1.5px solid #e2d7c6;border-radius:8px;padding:11px 12px;font:inherit;font-size:.9rem;color:#1a1a1a}
+  .rw-calc select:focus,.rw-calc input:focus{outline:none;border-color:#C98A3F}
+  .rw-calc-out{margin:16px 0 14px;padding:16px;border-radius:10px;background:#2a2622;text-align:center}
+  .rw-calc-label{display:block;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.55)}
+  .rw-calc-figure{display:block;font-family:'Fraunces',serif;font-size:1.7rem;font-weight:700;color:#E0A85E;margin:4px 0}
+  .rw-calc-note{display:block;font-size:.74rem;color:rgba(255,255,255,.5)}
+  .rw-calc-foot{font-size:.68rem;color:#999;text-align:center;margin:9px 0 0}
+</style>
+<script>
+(function(){
+  var LOW=60, HIGH=120;                         // £/m² guide band — keep in sync with delta block
+  var prop=document.getElementById('calc-prop'),
+      manualWrap=document.getElementById('calc-manual-wrap'),
+      manual=document.getElementById('calc-manual'),
+      finish=document.getElementById('calc-finish'),
+      storeys=document.getElementById('calc-storeys'),
+      fig=document.getElementById('calc-figure'),
+      note=document.getElementById('calc-note');
+  if(!prop) return;
+  function gbp(n){return '£'+Math.round(n/50)*50;}
+  function recalc(){
+    var area = prop.value==='0' ? (parseFloat(manual.value)||0) : parseFloat(prop.value);
+    manualWrap.hidden = prop.value!=='0';
+    var mult = parseFloat(finish.value)*parseFloat(storeys.value);
+    if(!area){fig.textContent='—';note.textContent='Enter a wall area';return;}
+    var lo=area*LOW*mult, hi=area*HIGH*mult;
+    fig.textContent=gbp(lo)+' – '+gbp(hi);
+    note.textContent='~'+area+' m² · incl. scaffold, mesh, base & topcoat';
+  }
+  [prop,manual,finish,storeys].forEach(function(el){if(el){el.addEventListener('input',recalc);el.addEventListener('change',recalc);}});
+  recalc();
+  // FAQ accordion (matches site pattern)
+  document.querySelectorAll('.faq-q').forEach(function(b){b.addEventListener('click',function(){
+    var open=this.getAttribute('aria-expanded')==='true';
+    document.querySelectorAll('.faq-q').forEach(function(x){x.setAttribute('aria-expanded','false');var a=x.nextElementSibling;if(a)a.style.maxHeight=null;var i=x.querySelector('.faq-icon');if(i)i.textContent='+';});
+    if(!open){this.setAttribute('aria-expanded','true');var a=this.nextElementSibling;if(a)a.style.maxHeight=a.scrollHeight+'px';var i=this.querySelector('.faq-icon');if(i)i.textContent='×';}
+  });});
+})();
+</script>
+
+<!-- ============================================================================
+  JSON-LD — Silicone Render page  (place immediately before </body>)
+  @graph: WebPage + Service + LocalBusiness + BreadcrumbList + FAQPage
+  about/mentions resolve to real Wikidata QIDs + Wikipedia articles (verified
+  entity nodes — do not invent QIDs; the ones below are correct as of authoring).
+    Render (coating) ........... Wikipedia: Render_(coating)
+    Stucco ..................... Q183008
+    External wall insulation ... Q5421400
+    Silicone ................... Q161519
+    Guildford .................. Q651299
+    Surrey ..................... Q23202
+  Replace every {{...}} placeholder. aggregateRating MUST mirror live Google
+  Business Profile values or omit it — mismatched ratings are a review-spam risk.
+============================================================================ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://{{DOMAIN}}/services/silicone-render.html#webpage",
+      "url": "https://{{DOMAIN}}/services/silicone-render.html",
+      "name": "Silicone Render Guildford & Surrey | Cost & Application | RenderWorks",
+      "description": "Silicone render in Guildford & Surrey costs £60–120/m² installed. Through-coloured, hydrophobic, self-cleaning, 25–40 year life, never needs repainting.",
+      "inLanguage": "en-GB",
+      "isPartOf": { "@id": "https://{{DOMAIN}}/#website" },
+      "dateModified": "{{PRICE_UPDATED}}",
+      "primaryImageOfPage": "https://{{DOMAIN}}/img/silicone-render-guildford.jpg",
+      "breadcrumb": { "@id": "https://{{DOMAIN}}/services/silicone-render.html#breadcrumb" },
+      "about": [
+        { "@type": "Thing", "name": "Render (coating)", "sameAs": "https://en.wikipedia.org/wiki/Render_(coating)" },
+        { "@type": "Thing", "name": "Stucco", "sameAs": "https://www.wikidata.org/wiki/Q183008" },
+        { "@type": "Thing", "name": "Silicone", "sameAs": "https://www.wikidata.org/wiki/Q161519" }
+      ],
+      "mentions": [
+        { "@type": "Thing", "name": "External wall insulation", "sameAs": "https://www.wikidata.org/wiki/Q5421400" },
+        { "@type": "Thing", "name": "Thermal insulation", "sameAs": "https://www.wikidata.org/wiki/Q193540" },
+        { "@type": "Place", "name": "Guildford", "sameAs": "https://www.wikidata.org/wiki/Q651299" },
+        { "@type": "Place", "name": "Surrey", "sameAs": "https://www.wikidata.org/wiki/Q23202" }
+      ]
+    },
+
+    {
+      "@type": "Service",
+      "@id": "https://{{DOMAIN}}/services/silicone-render.html#service",
+      "serviceType": "Silicone render application",
+      "name": "Silicone Render Installation",
+      "description": "Supply and application of through-coloured silicone render (3–5 mm thin-coat) on external walls across Guildford and Surrey, including base coat, alkali-resistant mesh, beads, primer and topcoat.",
+      "category": "Rendering / external wall finishing",
+      "provider": { "@id": "https://{{DOMAIN}}/#localbusiness" },
+      "areaServed": [
+        { "@type": "City", "name": "Guildford", "sameAs": "https://www.wikidata.org/wiki/Q651299" },
+        { "@type": "AdministrativeArea", "name": "Surrey", "sameAs": "https://www.wikidata.org/wiki/Q23202" }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "GBP",
+        "priceSpecification": {
+          "@type": "UnitPriceSpecification",
+          "price": "60.00-120.00",
+          "priceCurrency": "GBP",
+          "unitText": "per square metre installed",
+          "valueAddedTaxIncluded": false
+        },
+        "availabilityStarts": "{{PRICE_UPDATED}}"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Render systems",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Monocouche render" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "K-Rend & Weber systems" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "External wall insulation" } }
+        ]
+      }
+    },
+
+    {
+      "@type": ["LocalBusiness", "HomeAndConstructionBusiness"],
+      "@id": "https://{{DOMAIN}}/#localbusiness",
+      "name": "RenderWorks",
+      "url": "https://{{DOMAIN}}/",
+      "telephone": "+44-1483-000000",
+      "email": "hello@{{DOMAIN}}",
+      "priceRange": "££",
+      "image": "https://{{DOMAIN}}/img/renderworks-team.jpg",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "{{NAP_ADDRESS}}",
+        "addressLocality": "Guildford",
+        "addressRegion": "Surrey",
+        "postalCode": "{{POSTCODE}}",
+        "addressCountry": "GB"
+      },
+      "geo": { "@type": "GeoCoordinates", "latitude": "51.2362", "longitude": "-0.5704" },
+      "areaServed": { "@type": "GeoCircle", "geoMidpoint": { "@type": "GeoCoordinates", "latitude": "51.2362", "longitude": "-0.5704" }, "geoRadius": "24140" },
+      "openingHoursSpecification": [
+        { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "07:30", "closes": "18:00" },
+        { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "08:00", "closes": "14:00" }
+      ],
+      "sameAs": [ "{{GBP_CID}}" ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "{{RATING}}",
+        "reviewCount": "{{REVIEW_COUNT}}",
+        "bestRating": "5"
+      }
+    },
+
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://{{DOMAIN}}/services/silicone-render.html#breadcrumb",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://{{DOMAIN}}/" },
+        { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://{{DOMAIN}}/#services" },
+        { "@type": "ListItem", "position": 3, "name": "Silicone Render", "item": "https://{{DOMAIN}}/services/silicone-render.html" }
+      ]
+    },
+
+    {
+      "@type": "FAQPage",
+      "@id": "https://{{DOMAIN}}/services/silicone-render.html#faq",
+      "mainEntity": [
+        { "@type": "Question", "name": "How much does silicone render cost per m²?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Silicone render costs £60–£120/m² installed in Surrey, including scaffold, mesh, base coat and through-coloured topcoat. Hacking off old render adds roughly 15–20%." } },
+        { "@type": "Question", "name": "Is silicone render worth the extra cost over acrylic?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Silicone render is breathable and self-cleaning; acrylic render is neither. On most UK homes the silicone topcoat resists algae and damp better, which is why it is specified despite a higher cost per m²." } },
+        { "@type": "Question", "name": "Can silicone render be applied over pebbledash?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes, if the pebbledash is sound and well-bonded. Loose, hollow or cracked pebbledash is hacked off first. Bond is verified by tap-testing at survey." } },
+        { "@type": "Question", "name": "How long does silicone render take to apply?",
+          "acceptedAnswer": { "@type": "Answer", "text": "A typical semi-detached house takes 5–10 working days including scaffold, prep and coats, weather-dependent, as application needs 5–30 °C and dry cure conditions." } },
+        { "@type": "Question", "name": "Does silicone render need repainting?",
+          "acceptedAnswer": { "@type": "Answer", "text": "No. Silicone render is through-coloured, so it is never painted. Maintenance is an occasional rinse; service life is 25–40 years." } }
+      ]
+    }
+  ]
+}
+</script>
+
+</body>
+</html>
