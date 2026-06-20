@@ -1,0 +1,32 @@
+# robots.txt — RenderWorks  (https://{{DOMAIN}}/robots.txt)
+# Goal: let Googlebot crawl all indexable content; stop it wasting crawl budget
+# on parameterised/duplicate URLs. (Crawl budget is rarely a constraint on a
+# ~22-page site — the value here is preventing duplicate/parameter crawls, not
+# "maximising" anything. There is no directive that increases crawl rate.)
+
+User-agent: *
+Allow: /
+
+# Block low-value / non-indexable paths (none exist yet — examples for when they do)
+Disallow: /*?*sort=
+Disallow: /*?*utm_
+Disallow: /*&*
+Disallow: /cgi-bin/
+Disallow: /tmp/
+
+# Allow CSS/JS so Google can render the page (do NOT block these)
+Allow: /css/
+Allow: /js/
+Allow: /img/
+
+# AI crawler stance — DECISION REQUIRED. Leave commented to allow (default).
+# Uncomment to opt OUT of training crawls while staying in Google Search:
+# User-agent: GPTBot
+# Disallow: /
+# User-agent: CCBot
+# Disallow: /
+# (Google-Extended controls Gemini training; Googlebot/AI Overviews are separate.)
+# User-agent: Google-Extended
+# Disallow: /
+
+Sitemap: https://{{DOMAIN}}/sitemap.xml

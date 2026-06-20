@@ -1,178 +1,138 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Rendering Prices Guildford & Surrey | Cost Guide | RenderWorks</title>
-<meta name="description" content="House rendering prices in Guildford & Surrey. Silicone £60–120/m², monocouche £45–90/m², K-Rend £55–80/m², EWI from £100/m². Typical house costs & fixed quotes.">
-<meta name="robots" content="index, follow">
-<meta name="geo.region" content="GB-SRY"><meta name="geo.placename" content="Guildford, Surrey">
-<meta name="geo.position" content="51.2362;-0.5704"><meta name="ICBM" content="51.2362, -0.5704">
-<meta property="og:title" content="Rendering Prices Guildford & Surrey | Cost Guide | RenderWorks"><meta property="og:description" content="House rendering prices in Guildford & Surrey. Silicone £60–120/m², monocouche £45–90/m², K-Rend £55–80/m², EWI from £100/m². Typical house costs & fixed quotes.">
-<meta property="og:type" content="website"><meta property="og:locale" content="en_GB">
-<link rel="canonical" href="https://www.renderworksguildford.co.uk/pricing.html">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;1,9..144,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/css/site.css">
-<style>
-  .inner-hero{position:relative;background:var(--black,#0a0a0a);padding:140px 6vw 60px;overflow:hidden;border-bottom:1px solid rgba(255,255,255,0.06)}
-  .inner-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 70% at 70% 20%,rgba(201,138,63,0.12),transparent),linear-gradient(160deg,#15110c,#0a0a0a)}
-  .ih-wrap{position:relative;z-index:2;max-width:1180px;margin:0 auto;display:grid;grid-template-columns:1fr 380px;gap:54px;align-items:end}
-  .ih-eyebrow{font-family:'Inter',sans-serif;font-size:.72rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--gold,#C98A3F);margin-bottom:16px;display:flex;align-items:center;gap:9px}
-  .ih-eyebrow::before{content:'';width:22px;height:2px;background:var(--gold,#C98A3F)}
-  .inner-hero h1{font-family:'Fraunces',serif;font-size:clamp(2.2rem,4.2vw,3.5rem);font-weight:700;line-height:1.04;letter-spacing:-.02em;color:#fff;margin-bottom:16px}
-  .inner-hero h1 em{font-style:italic;color:var(--gold,#C98A3F)}
-  .ih-sub{font-size:1.04rem;color:rgba(255,255,255,0.62);line-height:1.7;max-width:540px;margin-bottom:26px}
-  .ih-btns{display:flex;gap:12px;flex-wrap:wrap}
-  .crumb{background:#0d0c0a;padding:13px 6vw;border-bottom:1px solid rgba(255,255,255,0.05)}
-  .crumb-in{max-width:1180px;margin:0 auto;display:flex;gap:8px;align-items:center;flex-wrap:wrap;font-size:.78rem}
-  .crumb-in a{color:rgba(255,255,255,0.5);text-decoration:none}.crumb-in a:hover{color:var(--gold,#C98A3F)}
-  .crumb-in span{color:rgba(255,255,255,0.3)}.crumb-cur{color:#fff!important}
-  .content{max-width:1180px;margin:0 auto;padding:72px 6vw;display:grid;grid-template-columns:1fr 340px;gap:58px;align-items:start;background:#faf7f2}
-  .prose h2{font-family:'Fraunces',serif;font-size:1.85rem;font-weight:700;color:#1a1a1a;margin:36px 0 14px;line-height:1.12}
-  .prose h2:first-child{margin-top:0}
-  .prose h3{font-family:'Fraunces',serif;font-size:1.25rem;font-weight:600;color:#1a1a1a;margin:24px 0 9px}
-  .prose p{font-size:1rem;color:#444;line-height:1.8;margin-bottom:15px}
-  .prose ul,.prose ol{margin:10px 0 18px 22px}.prose li{font-size:1rem;color:#444;line-height:1.7;margin-bottom:7px}
-  .prose strong{color:#1a1a1a}
-  .prose table{width:100%;border-collapse:collapse;margin:16px 0}
-  .prose th{background:#1a1a1a;color:#fff;padding:12px 15px;text-align:left;font-size:.84rem}
-  .prose td{padding:11px 15px;font-size:.9rem;color:#444;border-bottom:1px solid #e6ddd0}
-  .prose tr:nth-child(even) td{background:#f1eadf}
-  .aside{position:sticky;top:90px;display:flex;flex-direction:column;gap:16px}
-  .aside-card{background:#fff;border:1px solid #e6ddd0;border-radius:12px;padding:22px 20px}
-  .aside-card.dark{background:#14110c;border-color:rgba(255,255,255,0.08)}
-  .ac-h{font-family:'Fraunces',serif;font-size:1.05rem;font-weight:600;color:#1a1a1a;margin-bottom:13px}
-  .aside-card.dark .ac-h{color:#fff}
-  .ac-phone{display:block;font-family:'Fraunces',serif;font-size:1.5rem;font-weight:700;color:var(--gold,#C98A3F);text-decoration:none;margin-bottom:3px}
-  .ac-sub{font-size:.74rem;color:#888;margin-bottom:15px}.aside-card.dark .ac-sub{color:rgba(255,255,255,0.4)}
-  .aside-links{list-style:none}.aside-links li{border-bottom:1px solid #ece4d6;padding:9px 0}.aside-links li:last-child{border:none}
-  .aside-links a{font-size:.85rem;color:#444;text-decoration:none;display:flex;justify-content:space-between}.aside-links a:hover{color:var(--gold,#C98A3F)}
-  .aside-links a::after{content:'→';color:#bbb}
-  .pricerow{display:flex;justify-content:space-between;font-size:.85rem;padding:8px 0;border-bottom:1px solid #ece4d6}.pricerow:last-child{border:none}.pricerow b{color:#1a1a1a}
-  .ihform{background:#fff;border:1px solid #e6ddd0;border-radius:14px;padding:26px 24px;box-shadow:0 24px 60px rgba(0,0,0,0.4)}
-  .ihform h3{font-family:'Fraunces',serif;font-size:1.3rem;color:#1a1a1a;margin-bottom:3px}
-  .ihform p.s{font-size:.8rem;color:#888;margin-bottom:18px}
-  .ihform label{display:block;font-size:.72rem;font-weight:700;color:#1a1a1a;margin-bottom:5px}
-  .ihform input,.ihform select{width:100%;background:#f6f1e9;border:1.5px solid #e2d7c6;border-radius:8px;padding:11px 12px;font-family:'Inter',sans-serif;font-size:.9rem;margin-bottom:11px;color:#1a1a1a}
-  .ihform input:focus,.ihform select:focus{outline:none;border-color:var(--gold,#C98A3F)}
-  .ihform .row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-  .ihbtn{width:100%;background:var(--gold,#C98A3F);color:#fff;border:none;padding:14px;border-radius:9px;font-family:'Inter',sans-serif;font-size:.95rem;font-weight:700;cursor:pointer}
-  .ihbtn:hover{background:#b3691f}
-  .ihform .note{font-size:.7rem;color:#999;text-align:center;margin-top:9px}
-  .ihok{display:none;text-align:center;padding:30px 10px}
-  .ihok h4{font-family:'Fraunces',serif;font-size:1.3rem;color:var(--gold,#C98A3F);margin-bottom:9px}
-  .ihok p{font-size:.9rem;color:#444;line-height:1.6}
-  .areas-section{background:#faf7f2}
-  .section-head{margin-bottom:30px}
-  .ih-btns .btn-primary,.ih-btns .btn-ghost{display:inline-flex}
-  @media(max-width:980px){.ih-wrap{grid-template-columns:1fr;gap:34px}.content{grid-template-columns:1fr;gap:38px}.aside{position:static}}
-</style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.renderworksguildford.co.uk/"}, {"@type": "ListItem", "position": 2, "name": "Pricing", "item": "https://www.renderworksguildford.co.uk/pricing.html"}]}</script>
-</head>
-<body>
-<a href="#main" class="skip-link" style="position:absolute;left:-999px">Skip to content</a>
-<nav id="mainNav" class="scrolled">
-  <a href="/" class="logo">Render<em>Works</em></a>
-  <ul class="nav-links">
-    <li><a href="/services/silicone-render.html">Silicone</a></li>
-    <li><a href="/services/monocouche-render.html">Monocouche</a></li>
-    <li><a href="/services/external-wall-insulation.html">EWI</a></li>
-    <li><a href="/locations/">Areas</a></li>
-    <li><a href="/pricing.html">Pricing</a></li>
-    <li><a href="/contact.html" class="nav-cta">Free Survey</a></li>
-  </ul>
-</nav>
-<main id="main">
-<section class="inner-hero"><div class="ih-wrap" style="grid-template-columns:1fr">
-  <div>
-    <div class="ih-eyebrow">Pricing</div>
-    <h1>Honest prices, <em>fixed quotes</em></h1>
-    <p class="ih-sub">Clear per-m² guide prices for every render system, and a fixed written quotation after your free survey. No vague ranges, no surprises.</p>
-    <div class="ih-btns"><a href="/contact.html" class="btn-primary">Get a Free Survey</a><a href="tel:+441483000000" class="btn-ghost">01483 000 000</a></div>
-  </div>
-  
-</div></section>
-<div class="crumb"><div class="crumb-in"><a href="/">Home</a><span>›</span><span class="crumb-cur">Pricing</span></div></div>
-<div class="content"><div class="prose">
-<h2>Rendering price guide</h2><p>Surrey labour and access sit slightly above the national average. These are typical installed prices (materials, labour and standard scaffolding):</p>
-<table><thead><tr><th>System</th><th>Per m² installed</th><th>Best for</th></tr></thead><tbody>
-<tr><td>Acrylic / coloured</td><td>£40–£85</td><td>Bold colour, flexible, pebbledash refresh</td></tr>
-<tr><td>Monocouche</td><td>£45–£90</td><td>Durable through-coloured finish</td></tr>
-<tr><td>K-Rend / Weber</td><td>£55–£80</td><td>Through-colour + self-cleaning</td></tr>
-<tr><td>Silicone</td><td>£60–£120</td><td>Premium, self-cleaning, breathable</td></tr>
-<tr><td>EWI + render</td><td>from £100</td><td>Insulation + new facade in one</td></tr>
-</tbody></table>
-<h2>What a typical house costs</h2><table><thead><tr><th>Property</th><th>Approx wall area</th><th>Typical total</th></tr></thead><tbody>
-<tr><td>Terraced / bungalow</td><td>60–90 m²</td><td>£3,000–£8,000</td></tr>
-<tr><td>Semi-detached</td><td>90–150 m²</td><td>£5,000–£11,000</td></tr>
-<tr><td>Detached</td><td>150–300 m²</td><td>£9,000–£16,500+</td></tr>
-</tbody></table>
-<p style="font-size:.85rem;color:#888">Guide figures including scaffolding. Your exact price depends on wall area, height/access, render system and the condition of the existing surface (hacking off old render or extensive making-good adds labour). We confirm everything in a fixed written quote after a free survey.</p>
-<h2>What's included</h2><ul><li>Free survey and substrate assessment</li><li>Scaffold, beads, fibreglass mesh and base coat</li><li>Through-coloured topcoat in your chosen colour and finish</li><li>Site cleared and left tidy</li><li>Workmanship guarantee + manufacturer warranty on approved systems</li></ul>
-</div><aside class="aside">
-  <div class="aside-card dark"><p class="ac-h">Free survey</p><a href="tel:+441483000000" class="ac-phone">01483 000 000</a><p class="ac-sub">Mon–Fri 7:30–6 · Sat 8–2 · Fixed quote</p><a href="/contact.html" class="btn-primary" style="display:block;text-align:center">Book a survey</a></div>
-  <div class="aside-card"><p class="ac-h">Render systems</p><ul class="aside-links">
-    <li><a href="/services/silicone-render.html">Silicone Render</a></li>
-    <li><a href="/services/monocouche-render.html">Monocouche</a></li>
-    <li><a href="/services/k-rend-weber.html">K-Rend &amp; Weber</a></li>
-    <li><a href="/services/external-wall-insulation.html">EWI</a></li>
-    <li><a href="/services/acrylic-coloured-render.html">Acrylic Render</a></li>
-    <li><a href="/services/render-repairs.html">Render Repairs</a></li></ul></div>
-  <div class="aside-card"><p class="ac-h">Guide prices (installed)</p>
-    <div class="pricerow"><span>Acrylic</span><b>£40–85/m²</b></div>
-    <div class="pricerow"><span>Monocouche</span><b>£45–90/m²</b></div>
-    <div class="pricerow"><span>Silicone</span><b>£60–120/m²</b></div>
-    <div class="pricerow"><span>EWI + render</span><b>from £100/m²</b></div></div>
-</aside></div>
-<div class="cta-band"><div class="container"><h2>Ready to transform your home's exterior?</h2><p>Free survey, fixed written quote, no obligation. Through-coloured render that lasts decades and never needs painting.</p><a href="/contact.html" class="btn-dark">Request Free Survey →</a></div></div>
-</main>
-<footer>
-  <div class="footer-grid">
-    <div class="footer-brand">
-      <a href="/" class="logo">Render<em>Works</em></a>
-      <p class="footer-tagline">House rendering specialists across Guildford and Surrey. Silicone, monocouche, K-Rend and external wall insulation — through-coloured renders built to last.</p>
-      <div class="footer-badges"><span class="footer-badge">Free Survey</span><span class="footer-badge">4.9★ Rated</span><span class="footer-badge">£5M Insured</span><span class="footer-badge">25yr Life</span></div>
-    </div>
-    <div class="footer-col"><h4>Services</h4><ul>
-      <li><a href="/services/silicone-render.html">Silicone Render</a></li>
-      <li><a href="/services/monocouche-render.html">Monocouche Render</a></li>
-      <li><a href="/services/k-rend-weber.html">K-Rend &amp; Weber</a></li>
-      <li><a href="/services/external-wall-insulation.html">External Wall Insulation</a></li>
-      <li><a href="/services/acrylic-coloured-render.html">Acrylic Render</a></li>
-      <li><a href="/services/render-repairs.html">Render Repairs</a></li>
-    </ul></div>
-    <div class="footer-col"><h4>Areas</h4><ul>
-      <li><a href="/locations/rendering-guildford.html">Guildford</a></li>
-      <li><a href="/locations/rendering-woking.html">Woking</a></li>
-      <li><a href="/locations/rendering-godalming.html">Godalming</a></li>
-      <li><a href="/locations/rendering-leatherhead.html">Leatherhead</a></li>
-      <li><a href="/locations/">All areas</a></li>
-    </ul></div>
-    <div class="footer-col"><h4>Company</h4><ul>
-      <li><a href="/about.html">About</a></li>
-      <li><a href="/pricing.html">Pricing</a></li>
-      <li><a href="/faq.html">FAQ</a></li>
-      <li><a href="/contact.html">Contact</a></li>
-      <li><a href="tel:+441483000000">01483 000 000</a></li>
-    </ul></div>
-  </div>
-  <div class="footer-bottom">
-    <p>© 2025 RenderWorks. House rendering across Guildford &amp; Surrey.</p>
-    <p>01483 000 000 · hello@renderworksguildford.co.uk</p>
-  </div>
-</footer>
-<div class="mobile-bar">
-  <a href="tel:+441483000000" class="mb-call">📞 Call Now</a>
-  <a href="/contact.html" class="mb-quote">Free Survey</a>
-</div>
-<script>
-document.querySelectorAll('.faq-q').forEach(b=>b.addEventListener('click',function(){
-  const open=this.getAttribute('aria-expanded')==='true';
-  document.querySelectorAll('.faq-q').forEach(x=>{x.setAttribute('aria-expanded','false');const a=x.nextElementSibling;if(a)a.style.maxHeight=null;const i=x.querySelector('.faq-icon');if(i)i.textContent='+';});
-  if(!open){this.setAttribute('aria-expanded','true');const a=this.nextElementSibling;if(a)a.style.maxHeight=a.scrollHeight+'px';const i=this.querySelector('.faq-icon');if(i)i.textContent='×';}
-}));
-window.ihSubmit=function(f){const c=f.closest('.ihform-wrap');const fm=c.querySelector('.ihform');const ok=c.querySelector('.ihok');const ph=fm.querySelector('[data-req]');if(ph&&!ph.value.trim()){alert('Please enter your phone number.');return;}fm.style.display='none';ok.style.display='block';};
-const mn=document.getElementById('mainNav');if(mn){addEventListener('scroll',()=>mn.classList.toggle('scrolled',scrollY>40),{passive:true});}
+<!-- ============================================================================
+  JSON-LD — Silicone Render page  (place immediately before </body>)
+  @graph: WebPage + Service + LocalBusiness + BreadcrumbList + FAQPage
+  about/mentions resolve to real Wikidata QIDs + Wikipedia articles (verified
+  entity nodes — do not invent QIDs; the ones below are correct as of authoring).
+    Render (coating) ........... Wikipedia: Render_(coating)
+    Stucco ..................... Q183008
+    External wall insulation ... Q5421400
+    Silicone ................... Q161519
+    Guildford .................. Q651299
+    Surrey ..................... Q23202
+  Replace every {{...}} placeholder. aggregateRating MUST mirror live Google
+  Business Profile values or omit it — mismatched ratings are a review-spam risk.
+============================================================================ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://{{DOMAIN}}/services/silicone-render.html#webpage",
+      "url": "https://{{DOMAIN}}/services/silicone-render.html",
+      "name": "Silicone Render Guildford & Surrey | Cost & Application | RenderWorks",
+      "description": "Silicone render in Guildford & Surrey costs £60–120/m² installed. Through-coloured, hydrophobic, self-cleaning, 25–40 year life, never needs repainting.",
+      "inLanguage": "en-GB",
+      "isPartOf": { "@id": "https://{{DOMAIN}}/#website" },
+      "dateModified": "{{PRICE_UPDATED}}",
+      "primaryImageOfPage": "https://{{DOMAIN}}/img/silicone-render-guildford.jpg",
+      "breadcrumb": { "@id": "https://{{DOMAIN}}/services/silicone-render.html#breadcrumb" },
+      "about": [
+        { "@type": "Thing", "name": "Render (coating)", "sameAs": "https://en.wikipedia.org/wiki/Render_(coating)" },
+        { "@type": "Thing", "name": "Stucco", "sameAs": "https://www.wikidata.org/wiki/Q183008" },
+        { "@type": "Thing", "name": "Silicone", "sameAs": "https://www.wikidata.org/wiki/Q161519" }
+      ],
+      "mentions": [
+        { "@type": "Thing", "name": "External wall insulation", "sameAs": "https://www.wikidata.org/wiki/Q5421400" },
+        { "@type": "Thing", "name": "Thermal insulation", "sameAs": "https://www.wikidata.org/wiki/Q193540" },
+        { "@type": "Place", "name": "Guildford", "sameAs": "https://www.wikidata.org/wiki/Q651299" },
+        { "@type": "Place", "name": "Surrey", "sameAs": "https://www.wikidata.org/wiki/Q23202" }
+      ]
+    },
+
+    {
+      "@type": "Service",
+      "@id": "https://{{DOMAIN}}/services/silicone-render.html#service",
+      "serviceType": "Silicone render application",
+      "name": "Silicone Render Installation",
+      "description": "Supply and application of through-coloured silicone render (3–5 mm thin-coat) on external walls across Guildford and Surrey, including base coat, alkali-resistant mesh, beads, primer and topcoat.",
+      "category": "Rendering / external wall finishing",
+      "provider": { "@id": "https://{{DOMAIN}}/#localbusiness" },
+      "areaServed": [
+        { "@type": "City", "name": "Guildford", "sameAs": "https://www.wikidata.org/wiki/Q651299" },
+        { "@type": "AdministrativeArea", "name": "Surrey", "sameAs": "https://www.wikidata.org/wiki/Q23202" }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "GBP",
+        "priceSpecification": {
+          "@type": "UnitPriceSpecification",
+          "price": "60.00-120.00",
+          "priceCurrency": "GBP",
+          "unitText": "per square metre installed",
+          "valueAddedTaxIncluded": false
+        },
+        "availabilityStarts": "{{PRICE_UPDATED}}"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Render systems",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Monocouche render" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "K-Rend & Weber systems" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "External wall insulation" } }
+        ]
+      }
+    },
+
+    {
+      "@type": ["LocalBusiness", "HomeAndConstructionBusiness"],
+      "@id": "https://{{DOMAIN}}/#localbusiness",
+      "name": "RenderWorks",
+      "url": "https://{{DOMAIN}}/",
+      "telephone": "+44-1483-000000",
+      "email": "hello@{{DOMAIN}}",
+      "priceRange": "££",
+      "image": "https://{{DOMAIN}}/img/renderworks-team.jpg",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "{{NAP_ADDRESS}}",
+        "addressLocality": "Guildford",
+        "addressRegion": "Surrey",
+        "postalCode": "{{POSTCODE}}",
+        "addressCountry": "GB"
+      },
+      "geo": { "@type": "GeoCoordinates", "latitude": "51.2362", "longitude": "-0.5704" },
+      "areaServed": { "@type": "GeoCircle", "geoMidpoint": { "@type": "GeoCoordinates", "latitude": "51.2362", "longitude": "-0.5704" }, "geoRadius": "24140" },
+      "openingHoursSpecification": [
+        { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "07:30", "closes": "18:00" },
+        { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "08:00", "closes": "14:00" }
+      ],
+      "sameAs": [ "{{GBP_CID}}" ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "{{RATING}}",
+        "reviewCount": "{{REVIEW_COUNT}}",
+        "bestRating": "5"
+      }
+    },
+
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://{{DOMAIN}}/services/silicone-render.html#breadcrumb",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://{{DOMAIN}}/" },
+        { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://{{DOMAIN}}/#services" },
+        { "@type": "ListItem", "position": 3, "name": "Silicone Render", "item": "https://{{DOMAIN}}/services/silicone-render.html" }
+      ]
+    },
+
+    {
+      "@type": "FAQPage",
+      "@id": "https://{{DOMAIN}}/services/silicone-render.html#faq",
+      "mainEntity": [
+        { "@type": "Question", "name": "How much does silicone render cost per m²?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Silicone render costs £60–£120/m² installed in Surrey, including scaffold, mesh, base coat and through-coloured topcoat. Hacking off old render adds roughly 15–20%." } },
+        { "@type": "Question", "name": "Is silicone render worth the extra cost over acrylic?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Silicone render is breathable and self-cleaning; acrylic render is neither. On most UK homes the silicone topcoat resists algae and damp better, which is why it is specified despite a higher cost per m²." } },
+        { "@type": "Question", "name": "Can silicone render be applied over pebbledash?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes, if the pebbledash is sound and well-bonded. Loose, hollow or cracked pebbledash is hacked off first. Bond is verified by tap-testing at survey." } },
+        { "@type": "Question", "name": "How long does silicone render take to apply?",
+          "acceptedAnswer": { "@type": "Answer", "text": "A typical semi-detached house takes 5–10 working days including scaffold, prep and coats, weather-dependent, as application needs 5–30 °C and dry cure conditions." } },
+        { "@type": "Question", "name": "Does silicone render need repainting?",
+          "acceptedAnswer": { "@type": "Answer", "text": "No. Silicone render is through-coloured, so it is never painted. Maintenance is an occasional rinse; service life is 25–40 years." } }
+      ]
+    }
+  ]
+}
 </script>
-</body>
-</html>
